@@ -25,14 +25,13 @@ export default {
     MyMap
   },
   methods: {
-    randomPick: function (event){
-      var randFood;
-      do{
-        randFood = this.foodlist[Math.floor(this.foodlist.length * Math.random())];
+    randomPick: function (event) {
+      var randFood
+      do {
+        randFood = this.foodlist[Math.floor(this.foodlist.length * Math.random())]
       }
-      while (this.selected == randFood.name)
-      
-      this.selected = randFood.name;
+      while (this.selected === randFood.name)
+      this.selected = randFood.name
     }
   },
   data () {
